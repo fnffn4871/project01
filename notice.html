@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/notice.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/noticeMedia.css">
+  <link rel="stylesheet" href="css/kams.css">
+</head>
+
+<body>
+  <header>
+    <!-- header.topmenu -->
+    <div class="topmenu">
+      <div class="topmenu_inner">
+        <p class="topmenu_text">
+          <img src="image/topmenu_korea.png" alt="topmenu_korea.png">
+          이 누리집은 대한민국 공식 전자정부 누리집입니다.
+        </p>
+        <ul class="topmenu_list">
+          <li>
+            <select id="language">
+              <option value="language">for foreigner
+                <img src="image/topmenu_down.png" alt="topmenu_down">
+              </option>
+              <option value="language">한국어</option>
+              <option value="language">영어</option>
+              <option value="language">중국어</option>
+            </select>
+          </li>
+          <li class="li_before_line">
+            <a href="login.html">로그인</a>
+          </li>
+          <li class="li_before_line">
+            <a href="#">회원가입</a>
+          </li>
+          <li class="li_before_line">
+            <a href="#">화면크기</a>
+          </li>
+          <li class="li_before_line">
+            <button>
+              <img src="image/topmenu_p.png" alt="topmenu_p">
+            </button>
+            <p>100%</p>
+            <button>
+              <img src="image/topmenu_m.png" alt="topmenu_m">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- header.topbar -->
+    <div class="topbar">
+      <div class="topbar_inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="image/topbar_logo.png" alt="logo">
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="nav">
+            <li class="nav-item" data-index="0">
+              <a href="#none">알림 /소식</a>
+              <!-- <div id="navWrap1">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      알림/소식
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">공지사항</a>
+                    <hr>
+                  <p>새소식, 운영점검 등 서비스 이용에 필요한 정보를 확인할 수 있어요.</p></li>
+                  <li><a href="#">채용정보</a>
+                  <hr>
+                <p>예술경영지원센터의 채용 공고와 정보를 확인할 수 있어요. </p></li>
+                  <li><a href="#">입찰 정보</a>
+                  <hr>
+                <p>
+                  공연예술통합전산망 입찰 정보를 살펴볼 수 있어요.
+                </p></li>
+                  <li><a href="#">KAMS Now</a>
+                  <hr>
+                <p>예술경영지원센터의 다양한 이슈들과 언론보도 자료를 확인할 수 있어요. </p></li>
+                  <li><a href="#">일자리 정보</a>
+                  <hr><p>아트모아와 연동하여 예술분야의 기업/채용정보를 제공해요. </p></li>
+                  <li><a href="#">공모/기금/행사</a>
+                  <hr><p>예술경영 활동영역을 넓혀갈 수 있는 알찬 소식 및 정보를 올려주세요.</p></li>
+                  <li><a href="#">뉴스레터</a><hr><p></p>
+                  </li>
+                  </div>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item" data-index="1">
+              <a href="#none" id="navTab2">지원/신청</a>
+              <!-- <div id="navWrap2">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      지원/신청
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">공모사업 안내</a>
+                    <hr>
+                  <p>예술경영지원센터에서 지원하는 공모사업에 많은 관심과 지원신청바랍니다. </p></li>
+                  <li><a href="#">온라인 참가신청</a>
+                  <hr>
+                <p>예술경영지원센터에서 진행하는 교육·행사에 많은 관심과 참가바랍니다. </p></li>
+                  <li><a href="#">예술경영컨설팅</a>
+                  <hr>
+                <p>
+                  ※ 24년 12월부로 "예술경영온라인 컨설팅" 사업은 종료되었습니다.
+                </p></li>
+                  
+                  </div>
+                </ul>
+                
+              </div> -->
+            </li>
+            <li class="nav-item" data-index="2">
+              <a href="#none" id="navTab3">사업안내</a>
+              <!-- <div id="navWrap3">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      사업안내
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">예술현장 성장기반 조성</a>
+                    <hr>
+                  <p>예술의 산업화 추진을 통한 예술현장 성장기반을 조성하고자 합니다.</p></li>
+                  <li><a href="#">공연시장 활성화 지원</a>
+                  <hr>
+                <p>국내 공연예술 시장 정보를 체계적으로 수집·제공하고, 유통 활성화 및 경쟁력 있는 우수 공연예술작품의 해외진출을 지원합니다.</p></li>
+                  <li><a href="#">미술시장 활성화 지원</a>
+                  <hr>
+                <p>
+                  공연예술통합전산망 입찰 정보를 살펴볼 수 있어요.
+                </p></li>
+                  <li><a href="#">아트코리아랩</a>
+                  <hr>
+                <p>아트코리아랩은 새로운 예술을 실험하고 확산의 장을 만드는 종합지원 플랫폼입니다.</p></li>
+                  
+                  </div>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item" data-index="3">
+              <a href="#none" id="navTab4">자료공간</a>
+              <!-- <div id="navWrap4">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      자료공간
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">발간자료</a>
+                    <hr>
+                  <p></p></li>
+                  <li><a href="#">동향/분석자료</a>
+                  <hr>
+                <p></p></li>
+                  <li><a href="#">전문예술법인단체현황</a>
+                  <hr>
+                <p>
+                  「문화예술진흥법」 제7조에 따라 국가와 지방자치단체가 전문성 있는 예술법인·단체를 지정하고 육성하는 제도입니다.
+                </p></li>
+                  
+                  </div>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item" data-index="4">
+              <a href="#none" id="navTab5">정보공개</a>
+              <!-- <div id="navWrap5">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      정보공개
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">정보공개제도</a>
+                    <hr>
+                  <p>국민의 알권리를 보장함으로써 더 많은 정보를 바탕으로 국정운영에 참여할 수 있도록 합니다.</p></li>
+                  <li><a href="#">정보공개청구</a>
+                  <hr>
+                <p></p></li>
+                  <li><a href="#">사전정보공표</a>
+                  <hr>
+                <p>
+                  
+                </p></li>
+                  <li><a href="#">공공데이터개방</a>
+                  <hr>
+                <p></p></li>
+                <li>
+                  <a href="#">정보공개자료</a>
+                  <hr>
+                <p></p>
+                <ul>
+                  <li><a href="#">업무추진비</a></li>
+                  <li><a href="#">주요계약현황</a></li>
+                  <li><a href="#">기부금 수령 및 집행현황</a></li>
+                  <li><a href="#">상품권 구매사용 현황</a></li>
+                  <li><a href="#">징계현황</a></li>
+                </ul>
+              </li>
+                <li><a href="#">사업실명제</a>
+                  <hr>
+                <p></p></li>
+                <li><a href="#">고객의소리</a>
+                  <hr>
+                <p>예술경영지원센터는 여러분의 의견에 귀 기울이겠습니다.
+                  예술경영지원센터에 하고 싶은 이야기나 문의사항이 있으시면 자유롭게 올려주십시오.</p></li>
+                  </div>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item" data-index="5">
+              <a href="#none" id="navTab6">기관소개</a>
+              <!-- <div id="navWrap6">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      기관소개
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">인사말</a>
+                    <hr>
+                  <p></p></li>
+                  <li><a href="#">연혁</a>
+                  <hr>
+                <p></p></li>
+                  <li><a href="#">미션&비젼</a>
+                  <hr>
+                <p>
+                  
+                </p></li>
+                  <li><a href="#">조직구성</a>
+                  <hr>
+                <p></p></li>
+                <li><a href="#">윤리경영</a>
+                  <hr>
+                <p></p>
+              <ul>
+                <li><a href="#">윤리헌장</a></li>
+                <li><a href="#">인권경영선언문</a></li>
+                <li><a href="#">고객헌장</a></li>
+                <li><a href="#">부패/공익신고</a></li>
+              </ul></li>
+                <li><a href="#">경영공시</a>
+                  <hr>
+                <p></p></li>
+                <li><a href="#">오시는 길</a>
+                  <hr>
+                <p></p></li>
+                  
+                  </div>
+                </ul>
+              </div> -->
+            </li>
+          </ul>
+          
+        </nav>
+        
+        <!-- 모바일 메뉴바 -->
+        <div class="sitemap-nav-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div> 
+        <section class="sitemap-section" id="sitemap-section">
+          <div class="sitemap-header">
+              <!-- <div class="site-logo">
+                  <img src="/image/topbar_logo.png" alt="">
+              </div> -->
+              <div class="sitemap-inner">
+                  <div class="site-title">전체메뉴</div>
+              <div class="site-icon">
+                  <i class="fa-solid fa-xmark" style="color: #fff;"></i>
+              </div>
+              </div>
+          </div>
+          <div class="sitemap-inner">
+              
+              <ul>
+                  <li>
+                      <a href="#none" id="title01">알림/소식</a>
+                      <ul id="con01">
+                          <li><a href="#none">공지사항</a></li>
+                          <li><a href="#none">입찰정보</a></li>
+                          <li><a href="#none">KAMS NOW</a></li>
+                          <li><a href="#none">일자리정보</a></li>
+                          <li><a href="#none">공모/기금/행사</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#none" id="title02">지원/신청</a>
+                      <ul id="con02">
+                          <li><a href="#none">공모사업 안내</a></li>
+                          <li><a href="#none">온라인 참가신청</a></li>
+                          <li><a href="#none">예술경영 컨설팅 신청</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#none" id="title03">사업안내</a>
+                      <ul id="con03">
+                          <li><a href="#none">예술단체의 혁신성장 도모</a></li>
+                          <li><a href="#none">공연시장 체계화 및 유통 활성화</a></li>
+                          <li><a href="#none">미술시장 체계화 및 유통 활성화</a></li>
+                          <li><a href="#none">아트코리아랩</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#none" id="title04">자료공간</a>
+                      <ul id="con04">
+                          <li><a href="#none">발간자료</a></li>
+                          <li><a href="#none">동향/분석자료</a></li>
+                          <li><a href="#none">전문예술법인단체현황</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#none" id="title05">정보공개</a>
+                      <ul id="con05">
+                          <li><a href="#none">정보공개제도</a></li>
+                          <li><a href="#none">정보공개청구</a></li>
+                          <li><a href="#none">사전정보공표</a></li>
+                          <li><a href="#none">공공테이터개방</a></li>
+                          <li><a href="#none">정보공개자료</a></li>
+                          <li><a href="#none">사업실명제</a></li>
+                          <li><a href="#none">고객의 소리</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#none" id="title06">기관소개</a>
+                      <ul id="con06">
+                          <li><a href="#none">인사말</a></li>
+                          <li><a href="#none">미션&비전</a></li>
+                          <li><a href="#none">연혁</a></li>
+                          <li><a href="#none">조직구성</a></li>
+                          <li><a href="#none">인권경영 선언문</a></li>
+                          <li><a href="#none">윤리경영</a></li>
+                          <li><a href="#none">경영공시</a></li>
+                          <li><a href="#none">오시는길</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          
+      </section>
+
+        <!-- 데스크탑 메뉴바 -->
+        <div class="submenu_container" id="submenu">
+          <div class="inner">
+            <ul class="submenu">
+              <li class="submenu-item">
+                <a href="notice.html">공지사항</a>
+                <a href="#none">채용정보</a>
+                <a href="#none">입찰정보</a>
+                <a href="#none">KAMS NOW</a>
+                <a href="#none">일자리정보</a>
+                <a href="#none">공모/기금/행사</a>
+                <a href="#none">뉴스레터</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#none">공모사업 안내</a>
+                <a href="#none">예술경영컨설팅</a>
+                <a href="#none">FAQ</a>
+                <a href="#none">컨설팅 전문 정보</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#none">예술현장 성장기반 조성</a>
+                <a href="#none">공연시장 활성화 지원</a>
+                <a href="#none">미술시장 활성화 지원</a>
+                <a href="#none">아트코리아랩</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#none">발간자료</a>
+                <a href="#none">동향/분석자료</a>
+                <a href="#none">전문예술법인단체현황</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#none">정보공개제도</a>
+                <a href="#none">정보공개청구</a>
+                <a href="#none">사전정보공표</a>
+                <a href="#none">공공데이터개방</a>
+                <a href="#none">정보공개자료</a>
+                <a href="#none">사업실명제</a>
+                <a href="#none">고객의소리</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#none">인사말</a>
+                <a href="#none">연혁</a>
+                <a href="#none">미션/비전</a>
+                <a href="#none">조직구성</a>
+                <a href="#none">윤리경영</a>
+                <a href="#none">경영공시</a>
+                <a href="#none">오시는 길</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="gnb-dim"></div>
+        <div class="btnmenu">
+          <div class="btnmenu">
+            <ul>
+              
+              <li><a href="#none">
+                  <img src="image/topbar_icon02.png" alt="icon02">
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+  </header>
+  
+  
+
+  <div class="container_inner">
+    <div class="left_area">
+      <h2>
+        알림/소식
+      </h2>
+      <div class="submenu">
+        <ul class="submenu1">
+          <li class="menu_list1"><a href="#none">공지사항</a></li>
+          <li class="menu_list2"><a href="#none">채용정보</a></li>
+          <li class="menu_list3"><a href="#none">입찰 정보</a></li>
+          <li class="menu_list4"><a href="#none">KAMS NOW</a> </li>
+          <li class="menu_list5"><a href="#none">일자리 정보</a> </li>
+          <li class="menu_list6"><a href="#none">공모/기금/행사</a> </li>
+          <li class="menu_list7"><a href="#none">뉴스레터</a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="con_title">
+        <h2>공지사항</h2>
+        <div class="location">
+          <a href="#none">HOME</a>
+          <img src="image/locationBu.gif" alt="">
+          <a href="#none">알림/소식</a>
+          <img src="image/locationBu.gif" alt="">
+          <a href="#none" class="active">공지사항</a>
+        </div>
+      </div>
+      <div class="con_area">
+        <div class="board_top">
+          <div class="board_search">
+            <select name="search" id="search-box">
+              <option value="title">제목</option>
+              <option value="content">내용</option>
+            </select>
+            <input type="text">
+            <button>검색</button>
+          </div>
+        </div>
+        <div class="board_layout">
+          <table class="boardlist">
+            <thead>
+              <tr>
+                <th scope="col" class="first" style="width:8%;" id="number">번호</th>
+                <th scope="col" style="width:10%" id="section">구분</th>
+                <th scope="col" id="title">제목</th>
+                <th scope="col" style="width:15%" id="date">작성일</th>
+                <th scope="col" style="width:10%" id="view">조회</th>
+                <th scope="col" class="last" style="width:8%" id="f">파일</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4136&amp;page=1&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    성장기 기초예술 기업 지원 공모 2차 발표심사 결과 안내</a></td>
+                <td>2025-05-08</td>
+                <td>685</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/2025 성장기 기초예술 기업 지원사업 공모 2차 심사 결과보고(홈페이지 공고).pdf"
+                    target="_top"><img src="image/pdf.gif"
+                      alt="2025 성장기 기초예술 기업 지원사업 공모 2차 심사 결과보고(홈페이지 공고).pdf 다운로드"></a></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4135&amp;page=1&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    한국미술 해외출판 지원 공모 최종심의 결과 안내</a></td>
+                <td>2025-05-08</td>
+                <td>314</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/2025 한국미술 해외출판 지원 공모 2차심의 결과발표.pdf" target="_top"><img
+                      src="image/pdf.gif" alt="2025 한국미술 해외출판 지원 공모 2차심의 결과발표.pdf 다운로드"></a></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4134&amp;page=1&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    K-뮤지컬국제마켓 개최 안내 (6.2(월)~6.6(금))</a></td>
+                <td>2025-05-02</td>
+                <td>1257</td>
+                <td></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4131&amp;page=1&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    「아트페어 육성지원」 사업 참여단체 2차 공모</a></td>
+                <td>2025-04-29</td>
+                <td>1540</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/[공모요강] 2025 아트페어 육성지원 사업 2차 공모(1).pdf"
+                    target="_top"><img src="image/pdf.gif" alt="[공모요강] 2025 아트페어 육성지원 사업 2차 공모(1).pdf 다운로드"></a></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4130&amp;page=1&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    플랫폼 후속지원 공모 결과 안내</a></td>
+                <td>2025-04-25</td>
+                <td>1065</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/2025 플랫폼 후속지원_심의결과 공고문.pdf" target="_top"><img
+                      src="image/pdf.gif" alt="2025 플랫폼 후속지원_심의결과 공고문.pdf 다운로드"></a></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4129&amp;page=1&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    신진작가 전시 지원 면접심의 결과 안내</a></td>
+                <td>2025-04-25</td>
+                <td>1004</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/2025 신진작가 전시 지원 면접심의 결과 안내.pdf" target="_top"><img
+                      src="image/pdf.gif" alt="2025 신진작가 전시 지원 면접심의 결과 안내.pdf 다운로드"></a></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4128&amp;page=1&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    국제공항 전시 지원 면접심의 결과 안내</a></td>
+                <td>2025-04-25</td>
+                <td>1020</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/2025 국제공항 전시 지원 면접심의 결과 안내.pdf" target="_top"><img
+                      src="image/pdf.gif" alt="2025 국제공항 전시 지원 면접심의 결과 안내.pdf 다운로드"></a></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4127&amp;page=1&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    아트코리아랩 예술기술 융합 &lt;수퍼 테스트베드&gt; 지원 공모 안내</a></td>
+                <td>2025-04-24</td>
+                <td>3422</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/2. 2025 아트코리아랩_예술기술 융합 수퍼 테스트베드 지원_공모요강(1).pdf"
+                    target="_top"><img src="image/pdf.gif"
+                      alt="2. 2025 아트코리아랩_예술기술 융합 수퍼 테스트베드 지원_공모요강(1).pdf 다운로드"></a></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4126&amp;page=1&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    뮤지컬 전문 프로듀서 글로벌 역량 강화 프로그램 공모 심의 결과 안내</a></td>
+                <td>2025-04-22</td>
+                <td>1182</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/심의결과공고_2025 뮤지컬 전문프로듀서 글로벌 역량 강화 프로그램.pdf"
+                    target="_top"><img src="image/pdf.gif" alt="심의결과공고_2025 뮤지컬 전문프로듀서 글로벌 역량 강화 프로그램.pdf 다운로드"></a>
+                </td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4121&amp;page=1&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    지역전시 활성화 사업 공모_유형2)인구감소(관심) 및 국가산단 지역 특화 전시_최종(면접)심의 결과 안내</a></td>
+                <td>2025-04-21</td>
+                <td>1415</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/2025 지역전시활성화사업 유형2 최종(면접)심의 결과 공고문(0).pdf"
+                    target="_top"><img src="image/pdf.gif" alt="2025 지역전시활성화사업 유형2 최종(면접)심의 결과 공고문(0).pdf 다운로드"></a>
+                </td>
+              </tr>
+              <!-- 여기부터 2 -->
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4118&amp;page=2&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    차세대 작가 프로모션 전시 지원 2차 공모(~5.12.(월), 16:00)</a></td>
+                <td>2025-04-18</td>
+                <td>2044</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/붙임1. 2025 차세대 작가 프로모션 전시 지원 2차 공모요강(2).pdf"
+                    target="_top"><img src="image/pdf.gif"
+                      alt="붙임1. 2025 차세대 작가 프로모션 전시 지원 2차 공모요강(2).pdf 다운로드"></a></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4103&amp;page=2&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    아트코리아랩 공유오피스 단기입주 모집(~5.16.(금) 15:00)</a></td>
+                <td>2025-04-10</td>
+                <td>2826</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/2025 아트코리아랩 공유오피스 단기입주 모집_공모요강(0).pdf"
+                    target="_top"><img src="image/pdf.gif"
+                      alt="2025 아트코리아랩 공유오피스 단기입주 모집_공모요강(0).pdf 다운로드"></a></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4082&amp;page=2&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    오사카 엑스포 계기 한국미술 특별전시</a></td>
+                <td>2025-04-02</td>
+                <td>1224</td>
+                <td></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4069&amp;page=2&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    미술시장조사 시행 안내</a></td>
+                <td>2025-03-21</td>
+                <td>686</td>
+                <td></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4017&amp;page=2&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    아트코리아랩 비즈센터 운영 안내</a></td>
+                <td>2025-02-05</td>
+                <td>1687</td>
+                <td></td>
+              </tr>
+              <tr class="noticeColor">
+                <td><img src="image/notice.png" alt="공지"></td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=3970&amp;page=2&amp;txtKeyword=&amp;ddlKeyfield=T">예술가와
+                    예술기업을 위한 &lt;아트코리아랩&gt; 무료 대관 이용 안내</a></td>
+                <td>2024-11-19</td>
+                <td>4336</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2134</td>
+                <td>알림</td>
+                <td class="left"><a
+                    href="notice_view.aspx?Idx=4132&amp;page=2&amp;txtKeyword=&amp;ddlKeyfield=T">(재)예술경영지원센터 근로자의 날 휴무
+                    안내(5월 1일)</a></td>
+                <td>2025-04-30</td>
+                <td>299</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2133</td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4125&amp;page=2&amp;txtKeyword=&amp;ddlKeyfield=T">AI시대의
+                    예술 토론회 개최</a></td>
+                <td>2025-04-22</td>
+                <td>1186</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/25.4.24. AI시대의 예술 토론회 개최 안내.pdf" target="_top"><img
+                      src="image/pdf.gif" alt="25.4.24. AI시대의 예술 토론회 개최 안내.pdf 다운로드"></a></td>
+              </tr>
+              <tr>
+                <td>2132</td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4122&amp;page=2&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    아트코리아랩 기술융합 오픈이노베이션 지원 발표심의 결과안내</a></td>
+                <td>2025-04-22</td>
+                <td>944</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/2025 아트코리아랩 기술융합 오픈이노베이션 지원 발표심의 결과(0).pdf"
+                    target="_top"><img src="image/pdf.gif" alt="2025 아트코리아랩 기술융합 오픈이노베이션 지원 발표심의 결과(0).pdf 다운로드"></a></td>
+              </tr>
+              <tr>
+                <td>2131</td>
+                <td>알림</td>
+                <td class="left"><a href="notice_view.aspx?Idx=4120&amp;page=2&amp;txtKeyword=&amp;ddlKeyfield=T">2025
+                    아트코리아랩 대학연계 아트&amp;테크 창업 활성화 지원 심의 결과안내</a></td>
+                <td>2025-04-21</td>
+                <td>810</td>
+                <td><a href="https://www.gokams.or.kr:442/DATA/GO/(공지) 2025 아트코리아랩 대학연계 아트앤테크 창업 활성화 지원 심의 결과안내.pdf"
+                    target="_top"><img src="image/pdf.gif" alt="(공지) 2025 아트코리아랩 대학연계 아트앤테크 창업 활성화 지원 심의 결과안내.pdf 다운로드"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+        <div class="pagination">
+          <a href="#none" class="arrow-left">
+            <</a>
+              <ol id="numbers">
+                <!-- <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li> -->
+              </ol>
+              <a href="#none" class="arrow-right">></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="banner">
+    <div data-aos="fade-up" class="banner_inner">
+      <div class="banner_text">
+        <p class="title">일상 속 쉼표, 
+          <span>문화가 있는 날</span>
+        </p>
+        <p class="con">문화가 있는 날은 『문화기본법』 제12조 제2항에 근거하여 국민이 일상에서 문화를
+          쉽게 접할 수 있도록 매달 마지막 수요일과 그 주간에 다양한 문화혜택과 기획프로그램을
+          제공하는 날입니다.</p>
+      </div>
+      <button>
+        <p>혜택 바로가기</p>
+        <div class="icon">
+          <img src="image/chevron_forward.png" alt="" class="icon">
+        </div>
+
+      </button>
+    </div>
+    <div class="footer logo_box">
+      <div class="footer channel_contents">
+        <div class="footer_inner">
+          <ul>
+            <li class="logo"><a href="#"><img src="image/footer_2.png" alt=""></a></li>
+            <li class="logo"><a href="#"><img src="image/footer_3.png" alt=""></a></li>
+            <li class="logo"><a href="#"><img src="image/footer_5.png" alt=""></a></li>
+            <li class="logo"><a href="#"><img src="image/footer_6.png" alt=""></a></li>
+            <li class="logo"><a href="#"><img src="image/footer_7.png" alt=""></a></li>
+            <li class="logo"><a href="#"><img src="image/footer_11 (1).jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer private">
+        <div class="footer_inner">
+          <ul>
+            <li><a href="#none" id="private">개인정보처리방침</a></li>
+            <li><a href="#none">오시는길</a></li>
+            <li><a href="#none">영상정보처리기기방침</a></li>
+            <li><a href="#none">홈페이지불편신고</a></li>
+            <li><a href="#none">이메일무단수집거부</a></li>
+            <li><a href="#none">저작권정책</a></li>
+            <li><a href="#none">재단로고다운로드</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer menu">
+        <div class="logo">
+          <img src="image/topbar_logo.png" alt="">
+        </div>
+        <div class="text">
+          <p>
+            (03082) 서울시 종로구 대학로 57 (연건동) 홍익대학교 대학로 캠퍼스 교육동 3층, 12층 TEL : 02-708-2244
+            <br>
+            정보공개책임관 : 기획경영본부장 김범훈(02-708-2210)
+            <br>
+            정보공개담당 : 경영지원팀 강한솔(02-708-2207) © www.gokams.or.kr All Reserved.
+          </p>
+          <span>webmaster@gokams.or.kr</span>
+        </div>
+        <div class="img">
+          <img src="image/footerMenu01.png" style="width: 90px;" alt="">
+          <img src="image/footerMenu02.png" style="width: 60px;"
+          alt="">
+          <img src="image/footerMenu03" 
+          alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/headermain.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/script02.js"></script>
+  <script src="js/research_수정.js"></script>
+  <script src="js/section01.js"></script>
+  
+  
+</script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sitemap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sitemap-section">
+        <div class="sitemap-header">
+            <!-- <div class="site-logo">
+                <img src="/image/topbar_logo.png" alt="">
+            </div> -->
+            <div class="sitemap-inner">
+                <div class="site-title">전체메뉴</div>
+            <div class="site-icon">
+                <i class="fa-solid fa-xmark" style="color: #fff;"></i>
+            </div>
+            </div>
+        </div>
+        <div class="sitemap-inner">
+            
+            <ul>
+                <li>
+                    <a href="#none" id="title01">알림/소식</a>
+                    <ul id="con01">
+                        <li><a href="#none">공지사항</a></li>
+                        <li><a href="#none">입찰정보</a></li>
+                        <li><a href="#none">KAMS NOW</a></li>
+                        <li><a href="#none">일자리정보</a></li>
+                        <li><a href="#none">공모/기금/행사</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none" id="title02">지원/신청</a>
+                    <ul id="con02">
+                        <li><a href="#none">공모사업 안내</a></li>
+                        <li><a href="#none">온라인 참가신청</a></li>
+                        <li><a href="#none">예술경영 컨설팅 신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none" id="title03">사업안내</a>
+                    <ul id="con03">
+                        <li><a href="#none">예술단체의 혁신성장 도모</a></li>
+                        <li><a href="#none">공연시장 체계화 및 유통 활성화</a></li>
+                        <li><a href="#none">미술시장 체계화 및 유통 활성화</a></li>
+                        <li><a href="#none">아트코리아랩</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none" id="title04">자료공간</a>
+                    <ul id="con04">
+                        <li><a href="#none">발간자료</a></li>
+                        <li><a href="#none">동향/분석자료</a></li>
+                        <li><a href="#none">전문예술법인단체현황</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none" id="title05">정보공개</a>
+                    <ul id="con05">
+                        <li><a href="#none">정보공개제도</a></li>
+                        <li><a href="#none">정보공개청구</a></li>
+                        <li><a href="#none">사전정보공표</a></li>
+                        <li><a href="#none">공공테이터개방</a></li>
+                        <li><a href="#none">정보공개자료</a></li>
+                        <li><a href="#none">사업실명제</a></li>
+                        <li><a href="#none">고객의 소리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none" id="title06">기관소개</a>
+                    <ul id="con06">
+                        <li><a href="#none">인사말</a></li>
+                        <li><a href="#none">미션&비전</a></li>
+                        <li><a href="#none">연혁</a></li>
+                        <li><a href="#none">조직구성</a></li>
+                        <li><a href="#none">인권경영 선언문</a></li>
+                        <li><a href="#none">윤리경영</a></li>
+                        <li><a href="#none">경영공시</a></li>
+                        <li><a href="#none">오시는길</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script>
+            let title01 = document.getElementById('title01');
+            let con01 = document.getElementById('con01');
+
+            title01.addEventListener('click', function(){
+                con01.classList.toggle('active')
+            })
+            let title02 = document.getElementById('title02');
+            let con02 = document.getElementById('con02');
+
+            title02.addEventListener('click', function(){
+                con02.classList.toggle('active')
+            })
+            let title03 = document.getElementById('title03');
+            let con03 = document.getElementById('con03');
+
+            title03.addEventListener('click', function(){
+                con03.classList.toggle('active')
+            })
+            let title04 = document.getElementById('title04');
+            let con04 = document.getElementById('con04');
+
+            title04.addEventListener('click', function(){
+                con04.classList.toggle('active')
+            })
+            let title05 = document.getElementById('title05');
+            let con05 = document.getElementById('con05');
+
+            title05.addEventListener('click', function(){
+                con05.classList.toggle('active')
+            })
+            let title06 = document.getElementById('title06');
+            let con06 = document.getElementById('con06');
+
+            title06.addEventListener('click', function(){
+                con06.classList.toggle('active')
+            })
+        </script>
+    </section>
+</body>
+</html>

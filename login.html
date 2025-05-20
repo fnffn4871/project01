@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/kams.css">
+</head>
+<body>
+  <header>
+    <!-- header.topmenu -->
+    <div class="topmenu">
+      <div class="topmenu_inner">
+        <p class="topmenu_text">
+          <img src="image/topmenu_korea.png" alt="topmenu_korea.png">
+          이 누리집은 대한민국 공식 전자정부 누리집입니다.
+        </p>
+        <ul class="topmenu_list">
+          <li>
+            <select id="language">
+              <option value="language">for foreigner
+                <img src="image/topmenu_down.png" alt="topmenu_down">
+              </option>
+              <option value="language">한국어</option>
+              <option value="language">영어</option>
+              <option value="language">중국어</option>
+            </select>
+          </li>
+          <li class="li_before_line">
+            <a href="login.html">로그인</a>
+          </li>
+          <li class="li_before_line">
+            <a href="#">회원가입</a>
+          </li>
+          <li class="li_before_line">
+            <a href="#">화면크기</a>
+          </li>
+          <li class="li_before_line">
+            <button>
+              <img src="image/topmenu_p.png" alt="topmenu_p">
+            </button>
+            <p>100%</p>
+            <button>
+              <img src="image/topmenu_m.png" alt="topmenu_m">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- header.topbar -->
+    <div class="topbar">
+      <div class="topbar_inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="image/topbar_logo.png" alt="logo">
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="nav">
+            <li class="nav-item" data-index="0">
+              <a href="#none">알림 /소식</a>
+              <!-- <div id="navWrap1">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      알림/소식
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">공지사항</a>
+                    <hr>
+                  <p>새소식, 운영점검 등 서비스 이용에 필요한 정보를 확인할 수 있어요.</p></li>
+                  <li><a href="#">채용정보</a>
+                  <hr>
+                <p>예술경영지원센터의 채용 공고와 정보를 확인할 수 있어요. </p></li>
+                  <li><a href="#">입찰 정보</a>
+                  <hr>
+                <p>
+                  공연예술통합전산망 입찰 정보를 살펴볼 수 있어요.
+                </p></li>
+                  <li><a href="#">KAMS Now</a>
+                  <hr>
+                <p>예술경영지원센터의 다양한 이슈들과 언론보도 자료를 확인할 수 있어요. </p></li>
+                  <li><a href="#">일자리 정보</a>
+                  <hr><p>아트모아와 연동하여 예술분야의 기업/채용정보를 제공해요. </p></li>
+                  <li><a href="#">공모/기금/행사</a>
+                  <hr><p>예술경영 활동영역을 넓혀갈 수 있는 알찬 소식 및 정보를 올려주세요.</p></li>
+                  <li><a href="#">뉴스레터</a><hr><p></p>
+                  </li>
+                  </div>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item" data-index="1">
+              <a href="#none" id="navTab2">지원/신청</a>
+              <!-- <div id="navWrap2">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      지원/신청
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">공모사업 안내</a>
+                    <hr>
+                  <p>예술경영지원센터에서 지원하는 공모사업에 많은 관심과 지원신청바랍니다. </p></li>
+                  <li><a href="#">온라인 참가신청</a>
+                  <hr>
+                <p>예술경영지원센터에서 진행하는 교육·행사에 많은 관심과 참가바랍니다. </p></li>
+                  <li><a href="#">예술경영컨설팅</a>
+                  <hr>
+                <p>
+                  ※ 24년 12월부로 "예술경영온라인 컨설팅" 사업은 종료되었습니다.
+                </p></li>
+                  
+                  </div>
+                </ul>
+                
+              </div> -->
+            </li>
+            <li class="nav-item" data-index="2">
+              <a href="#none" id="navTab3">사업안내</a>
+              <!-- <div id="navWrap3">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      사업안내
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">예술현장 성장기반 조성</a>
+                    <hr>
+                  <p>예술의 산업화 추진을 통한 예술현장 성장기반을 조성하고자 합니다.</p></li>
+                  <li><a href="#">공연시장 활성화 지원</a>
+                  <hr>
+                <p>국내 공연예술 시장 정보를 체계적으로 수집·제공하고, 유통 활성화 및 경쟁력 있는 우수 공연예술작품의 해외진출을 지원합니다.</p></li>
+                  <li><a href="#">미술시장 활성화 지원</a>
+                  <hr>
+                <p>
+                  공연예술통합전산망 입찰 정보를 살펴볼 수 있어요.
+                </p></li>
+                  <li><a href="#">아트코리아랩</a>
+                  <hr>
+                <p>아트코리아랩은 새로운 예술을 실험하고 확산의 장을 만드는 종합지원 플랫폼입니다.</p></li>
+                  
+                  </div>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item" data-index="3">
+              <a href="#none" id="navTab4">자료공간</a>
+              <!-- <div id="navWrap4">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      자료공간
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">발간자료</a>
+                    <hr>
+                  <p></p></li>
+                  <li><a href="#">동향/분석자료</a>
+                  <hr>
+                <p></p></li>
+                  <li><a href="#">전문예술법인단체현황</a>
+                  <hr>
+                <p>
+                  「문화예술진흥법」 제7조에 따라 국가와 지방자치단체가 전문성 있는 예술법인·단체를 지정하고 육성하는 제도입니다.
+                </p></li>
+                  
+                  </div>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item" data-index="4">
+              <a href="#none" id="navTab5">정보공개</a>
+              <!-- <div id="navWrap5">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      정보공개
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">정보공개제도</a>
+                    <hr>
+                  <p>국민의 알권리를 보장함으로써 더 많은 정보를 바탕으로 국정운영에 참여할 수 있도록 합니다.</p></li>
+                  <li><a href="#">정보공개청구</a>
+                  <hr>
+                <p></p></li>
+                  <li><a href="#">사전정보공표</a>
+                  <hr>
+                <p>
+                  
+                </p></li>
+                  <li><a href="#">공공데이터개방</a>
+                  <hr>
+                <p></p></li>
+                <li>
+                  <a href="#">정보공개자료</a>
+                  <hr>
+                <p></p>
+                <ul>
+                  <li><a href="#">업무추진비</a></li>
+                  <li><a href="#">주요계약현황</a></li>
+                  <li><a href="#">기부금 수령 및 집행현황</a></li>
+                  <li><a href="#">상품권 구매사용 현황</a></li>
+                  <li><a href="#">징계현황</a></li>
+                </ul>
+              </li>
+                <li><a href="#">사업실명제</a>
+                  <hr>
+                <p></p></li>
+                <li><a href="#">고객의소리</a>
+                  <hr>
+                <p>예술경영지원센터는 여러분의 의견에 귀 기울이겠습니다.
+                  예술경영지원센터에 하고 싶은 이야기나 문의사항이 있으시면 자유롭게 올려주십시오.</p></li>
+                  </div>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item" data-index="5">
+              <a href="#none" id="navTab6">기관소개</a>
+              <!-- <div id="navWrap6">
+                <ul>
+                  <div class="left">
+                    <h4>
+                      기관소개
+                    </h4>
+                  </div>
+                  <div class="right">
+                    <li><a href="#">인사말</a>
+                    <hr>
+                  <p></p></li>
+                  <li><a href="#">연혁</a>
+                  <hr>
+                <p></p></li>
+                  <li><a href="#">미션&비젼</a>
+                  <hr>
+                <p>
+                  
+                </p></li>
+                  <li><a href="#">조직구성</a>
+                  <hr>
+                <p></p></li>
+                <li><a href="#">윤리경영</a>
+                  <hr>
+                <p></p>
+              <ul>
+                <li><a href="#">윤리헌장</a></li>
+                <li><a href="#">인권경영선언문</a></li>
+                <li><a href="#">고객헌장</a></li>
+                <li><a href="#">부패/공익신고</a></li>
+              </ul></li>
+                <li><a href="#">경영공시</a>
+                  <hr>
+                <p></p></li>
+                <li><a href="#">오시는 길</a>
+                  <hr>
+                <p></p></li>
+                  
+                  </div>
+                </ul>
+              </div> -->
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="submenu_container" id="submenu">
+          <div class="inner">
+            <ul class="submenu">
+              <li class="submenu-item">
+                <a href="notice.html">공지사항</a>
+                <a href="#none">채용정보</a>
+                <a href="#none">입찰정보</a>
+                <a href="#none">KAMS NOW</a>
+                <a href="#none">일자리정보</a>
+                <a href="#none">공모/기금/행사</a>
+                <a href="#none">뉴스레터</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#none">공모사업 안내</a>
+                <a href="#none">예술경영컨설팅</a>
+                <a href="#none">FAQ</a>
+                <a href="#none">컨설팅 전문 정보</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#none">예술현장 성장기반 조성</a>
+                <a href="#none">공연시장 활성화 지원</a>
+                <a href="#none">미술시장 활성화 지원</a>
+                <a href="#none">아트코리아랩</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#none">발간자료</a>
+                <a href="#none">동향/분석자료</a>
+                <a href="#none">전문예술법인단체현황</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#none">정보공개제도</a>
+                <a href="#none">정보공개청구</a>
+                <a href="#none">사전정보공표</a>
+                <a href="#none">공공데이터개방</a>
+                <a href="#none">정보공개자료</a>
+                <a href="#none">사업실명제</a>
+                <a href="#none">고객의소리</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#none">인사말</a>
+                <a href="#none">연혁</a>
+                <a href="#none">미션/비전</a>
+                <a href="#none">조직구성</a>
+                <a href="#none">윤리경영</a>
+                <a href="#none">경영공시</a>
+                <a href="#none">오시는 길</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="gnb-dim"></div>
+        <div class="btnmenu">
+          <div class="btnmenu">
+            <ul>
+              
+              <li><a href="#none">
+                  <img src="image/topbar_icon02.png" alt="icon02">
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+  </header>
+  
+    <section class="login-section">
+        <div class="login-page">
+            <div class="login-top">
+                <h2>아이디 로그인</h2>
+                <div class="mw_use_toggle">
+                    <div class="user_toggle">
+                        <input type="checkbox" id="keboard_secu_toggle" name="isTouchChkBox" onclick="javascript:touchYnChk()">
+                        <label for="keboard_secu_toggle">키보드 보안 프로그램 사용</label>
+                    </div>				
+                    <p class="refer">※ 키보드 보안 프로그램을 설치하면 키보드로 입력하는 모든 숫자, 언어를 안전하게 보호받을 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="login-center">
+                <div class="login_form_box">
+                    <div class="label_group">		
+                        <p class="txt">
+                            <label for="userId" class="">아이디</label></p>
+                        <div class="comp">
+                            <input type="text" id="userId" name="userId" style="ime-mode:disabled;" maxlength="16" placeholder="아이디를 입력하세요" title="아이디 입력란">
+                        </div>
+                        <p class="txt">
+                            <label for="password" class="password">비밀번호</label></p>
+                        <div class="comp">
+                            <input type="password" id="password" name="password" style="ime-mode:disabled;" maxlength="12" placeholder="비밀번호를 입력하세요" title="비밀번호 입력란">
+                        </div>
+                    </div>
+                     <p class=" txt_small_info font_eb193a" id="errMsg"></p> 
+                     
+                    <div class="mw_chkbox">
+                        <input type="checkbox" id="chk_login_001" name="idSaveFlag">
+                        <label for="chk_login_001">아이디 저장</label>
+                    </div>
+        
+                        <p class="txt_small_info med_eb193a" id="capsLockStatus" style="display: none;">CapsLock이 켜져있습니다.</p>			
+                        <button type="button" class="login_btn" id="genLogin" onclick="genLoginFn();">다음</button>
+                        
+                    <div class="btn_group">
+                        <a href="/nlogin/findUsrId" class="login_btn_txt">아이디 찾기</a>
+                        <span>|</span>
+                        <a href="/nlogin/findUsrPwd" class="login_btn_txt">비밀번호 찾기</a>
+                    </div>
+                        
+                    <!-- 2024-11-05 : 위치 이동 -->
+                    <div class="block">
+                        <a href="#" onclick="backLoginFn('/nlogin/loginByNlogin')" class="login_txt_link">다른 로그인 방법 보기</a>
+                        <img src="/image/ico-login-arr-right.png" alt="">
+                    </div>					
+                </div>
+                <div class="login_method_box">
+                    <ul class="mw_list_dot">
+                        <li>아이디 로그인 시 서비스 중 일부가 제한될 수 있습니다.</li>
+                        <li>개인정보 보호를 위해 비밀번호 5회 이상 오류 시 비밀번호 재설정이
+                            필요합니다.</li>
+                        <li>비밀번호는 주기적(3개월)으로 변경하고, 서비스 이용 후 반드시
+                            로그아웃하시기 바랍니다.</li>
+                        <li>아이디는 영문, 숫자를 조합한 4~16자 입니다.</li>
+                        <li>
+                            비밀번호는 문자, 숫자, 특수문자를 조합한 9~12자 입니다.<br>
+                            (대소문자 구별)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="login-bottom">
+                <div class="block">
+                    <p class="txt">아직 회원이 아니신가요?</p><!-- 2024-11-26 문구 수정 -->
+                    <a href="/nlogin/usr" class="login_txt_link">회원가입
+                      <img src="/image/ico-login-arr-right.png" alt="">
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="box_info">
+              
+                <p class="tit_ico">
+                  <img src="/image/ico-box-info.png" alt="">
+                  로그인에 어려움이 있으신가요?</p>
+        
+                <ul class="mw_list_dot">
+                    <li>로그인 <a href="#none" class="mw_link">관련 도움말</a>이나 다른 사용자가 <a href="#none" class="mw_link">자주 찾는 질문</a>을 확인해보세요.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="banner">
+        <div data-aos="fade-up" class="banner_inner">
+          <div class="banner_text">
+            <p class="title">일상 속 쉼표, 
+              <span>문화가 있는 날</span>
+            </p>
+            <p class="con">문화가 있는 날은 『문화기본법』 제12조 제2항에 근거하여 국민이 일상에서 문화를
+              쉽게 접할 수 있도록 매달 마지막 수요일과 그 주간에 다양한 문화혜택과 기획프로그램을
+              제공하는 날입니다.</p>
+          </div>
+          <button>
+            <p>혜택 바로가기</p>
+            <div class="icon">
+              <img src="image/chevron_forward.png" alt="" class="icon">
+            </div>
+    
+          </button>
+        </div>
+        <div class="footer logo_box">
+          <div class="footer channel_contents">
+            <div class="footer_inner">
+              <ul>
+                <li class="logo"><a href="#"><img src="image/footer_2.png" alt=""></a></li>
+                <li class="logo"><a href="#"><img src="image/footer_3.png" alt=""></a></li>
+                <li class="logo"><a href="#"><img src="image/footer_5.png" alt=""></a></li>
+                <li class="logo"><a href="#"><img src="image/footer_6.png" alt=""></a></li>
+                <li class="logo"><a href="#"><img src="image/footer_7.png" alt=""></a></li>
+                <li class="logo"><a href="#"><img src="image/footer_11 (1).jpg" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer private">
+            <div class="footer_inner">
+              <ul>
+                <li><a href="#none" id="private">개인정보처리방침</a></li>
+                <li><a href="#none">오시는길</a></li>
+                <li><a href="#none">영상정보처리기기방침</a></li>
+                <li><a href="#none">홈페이지불편신고</a></li>
+                <li><a href="#none">이메일무단수집거부</a></li>
+                <li><a href="#none">저작권정책</a></li>
+                <li><a href="#none">재단로고다운로드</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer menu">
+            <div class="logo">
+              <img src="image/topbar_logo.png" alt="">
+            </div>
+            <div class="text">
+              <p>
+                (03082) 서울시 종로구 대학로 57 (연건동) 홍익대학교 대학로 캠퍼스 교육동 3층, 12층 TEL : 02-708-2244
+                <br>
+                정보공개책임관 : 기획경영본부장 김범훈(02-708-2210)
+                <br>
+                정보공개담당 : 경영지원팀 강한솔(02-708-2207) © www.gokams.or.kr All Reserved.
+              </p>
+              <span>webmaster@gokams.or.kr</span>
+            </div>
+            <div class="img">
+              <img src="image/footerMenu01.png" style="width: 90px;" alt="">
+              <img src="image/footerMenu02.png" style="width: 60px;"
+              alt="">
+              <img src="image/footerMenu03" 
+              alt="">
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/headermain.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/script02.js"></script>
+  <script src="js/research_수정.js"></script>
+  <script src="js/section01.js"></script>
+  
+  <script>
+    AOS.init(); 
+  </script>
+</script>
+</body>
+</html>
